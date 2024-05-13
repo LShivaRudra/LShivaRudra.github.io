@@ -177,6 +177,20 @@ sections:
           tag: '*'
         - name: Deep Learning
           tag: Deep Learning
+        - name: Control Systems
+          tag: Control Systems
+        - name: Microcontrollers
+          tag: Microcontrollers
+        - name: ROS
+          tag: ROS
+        - name: Python
+          tag: Python
+        - name: C/C++
+          tag: C/C++
+        - name: CAD
+          tag: CAD
+        - name: Matlab/Simulink
+          tag: Matlab/Simulink
         - name: Other
           tag: Demo
     design:
