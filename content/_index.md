@@ -65,7 +65,7 @@ sections:
         - title: Research Intern
           company: Robotics Research Center, IIIT Hyderabad
           company_url: 'https://robotics.iiit.ac.in/'
-          company_logo: org-gc
+          company_logo: rrc_logo
           location: Hyderabad, India
           date_start: '2023-06-03'
           date_end: '2023-12-20'
@@ -78,7 +78,7 @@ sections:
         - title: Member
           company: Automation and Robotics Club, BITS Hyderabad
           company_url: 'https://arcbphc.vercel.app/'
-          company_logo: org-x
+          company_logo: arc-logo
           location: Hyderabad, India
           date_start: '2021-02-01'
           date_end: ''
