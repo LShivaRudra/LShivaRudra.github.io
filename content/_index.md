@@ -85,7 +85,7 @@ sections:
           description: |2-
             Responsibilities include:
 
-              * Led a team of 10-15 members to build an underwater rover. Mainly focused on Powersystems and Electronics aspects of this project which involved component selection, calibration and testing of the components.
+              * Led a team of 10-15 members to build an underwater rover. Mainly focused on Powersystems and Electronics aspects of this project which involved component selection, calibration and testing.
               * Mentored in various workshops which teach foundations of Robotics(microcontrollers, CAD design, etc.) to beginners at our university.
     design:
       columns: '2'
@@ -185,12 +185,12 @@ sections:
           tag: ROS
         - name: Python
           tag: Python
-        - name: C/C++
-          tag: C/C++
+        - name: C
+          tag: C
         - name: CAD
           tag: CAD
-        - name: Matlab/Simulink
-          tag: Matlab/Simulink
+        - name: Matlab
+          tag: Matlab
         - name: Other
           tag: Demo
     design:
@@ -259,13 +259,13 @@ sections:
       # phone: 888 888 88 88
       # appointment_url: 'https://calendly.com'
       address:
-        street: SBH Colony
+        # street: SBH Colony
         city: Hyderabad
         region: Telangana
-        postcode: '500060'
+        # postcode: '500060'
         country: India
         country_code: IN
-      directions: Shri Surya Residency, Near Shiva Ganga Theater
+      # directions: Shri Surya Residency, Near Shiva Ganga Theater
       # office_hours:
       #   - 'Monday 10:00 to 13:00'
       #   - 'Wednesday 09:00 to 10:00'

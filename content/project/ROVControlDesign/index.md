@@ -3,7 +3,7 @@ title: Six DOF ROV Control System Design
 summary: Designed and Simulated an underwater ROV control system using PID and LQR controllers and performed a comparative study of both the models
 tags:
   - Control Systems
-  - Matlab/Simulink
+  - Matlab
 date: '2023-01-10T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).

@@ -3,7 +3,7 @@ title: Wheeled Biped
 summary: Designed the control system for translational and jumping motion of a wheeled biped robot. LQR controller is used for translational self balancing motion and PD-fuzzy logic controller is used for jumping motion
 tags:
   - Control Systems
-  - Matlab/Simulink
+  - Matlab
   - CAD
 date: '2023-05-10T00:00:00Z'
 

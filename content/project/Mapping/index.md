@@ -2,7 +2,7 @@
 title: Implementing ESDF Mapping with VINS
 summary: The ESDF map is made using pointcloud data from the depth camera and rectified odometry from the VINS framework. Voxfield framework is utilized for this purpose
 tags:
-  - C/C++
+  - C
   - Python
   - ROS
 date: '2023-11-10T00:00:00Z'
