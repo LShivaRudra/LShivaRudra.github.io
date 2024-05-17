@@ -274,10 +274,10 @@ sections:
         latitude: '17.547542964136035'
         longitude: '78.57248863893717'  
       contact_links:
-        - icon: twitter
-          icon_pack: fab
-          name: DM Me
-          link: 'https://twitter.com/ShivaRudraLolla'
+        # - icon: twitter
+        #   icon_pack: fab
+        #   name: DM Me
+        #   link: 'https://twitter.com/ShivaRudraLolla'
         - icon: github
           icon_pack: fab
           name: Follow Me on GitHub
