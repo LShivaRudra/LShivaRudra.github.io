@@ -134,6 +134,6 @@ social:
 highlight_name: true
 ---
 
-Hello! I'm Shiva Rudra, a recent graduate from BITS Pilani, India. My research experience revolves around Robotics and Control Systems. I'm deeply passionate about the research on control and navigation for swarms. I will be thrilled to collaborate or contribute to a project in these domains! 
+Hello! I'm Shiva Rudra, a recent graduate from BITS Pilani, India. My research experience revolves around Robotics and Control Systems. I will be thrilled to collaborate or contribute to a project in these domains! 
 This is my portfolio website which contains my projects and blogs. You can find my **Resume** in the **[Link](https://drive.google.com/file/d/1c4oq_0obwb4blf0tESq8TKYEiRHNBWjc/view?usp=sharing)**.
 {style="text-align: justify;"}
