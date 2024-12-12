@@ -32,8 +32,10 @@ bio: My research interests include robotics and control systems. Drop me a messa
 # Interests to show in About widget
 interests:
   - Robotics
+  - Autonomous Navigation
+  - Perception
+  - SLAM
   - Control Systems
-  - Artificial Intelligence
 
 # Education to show in About widget
 education:
@@ -134,6 +136,5 @@ social:
 highlight_name: true
 ---
 
-Hello! I'm Shiva Rudra, a recent graduate from BITS Pilani, India. My research experience revolves around Robotics and Control Systems. I will be thrilled to collaborate or contribute to a project in these domains! 
-This is my portfolio website which contains my projects and blogs.
+Hello, I'm Shiva Rudra, a robotics enthusiast with a keen interest in autonomous systems and perception. This page contains few of my projects and articles related to robotics.
 {style="text-align: justify;"}
