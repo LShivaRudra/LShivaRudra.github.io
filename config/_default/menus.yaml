@@ -22,8 +22,9 @@ main:
   - name: Contact
     url: '#contact'
     weight: 60
-  # - name: CV
-  #   url: uploads/resume.pdf
+  # - name: Resume
+  #   # url: uploads/resume.pdf
+  #   url: 'https://drive.google.com/file/d/1jldGSp82ksWDM_dlUGcRQQyqfCb04weK/view?usp=drive_link'
   #   weight: 70
 
 # Link to a PDF of your resume/CV from the menu.

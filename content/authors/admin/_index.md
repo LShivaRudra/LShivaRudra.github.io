@@ -47,58 +47,58 @@ education:
 
 # Skills
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
-skills:
-  - name: Technical
-    items:
-      - name: Python
-        description: ''
-        percent: 80
-        icon: python
-        icon_pack: fab
-      - name: C/C++
-        description: ''
-        percent: 85
-        icon: c
-        icon_pack: fab
-      - name: ROS
-        description: ''
-        percent: 80
-        icon: robot
-        icon_pack: fas
-      - name: Matlab/Simulink
-        description: ''
-        percent: 80
-        icon: robot
-        icon_pack: fas
-      - name: Git/GitHub
-        description: ''
-        percent: 90
-        icon: github
-        icon_pack: fab
-      - name: Onshape
-        description: ''
-        percent: 75
-        icon: robot
-        icon_pack: fas
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Reading
-        description: ''
-        percent: 80
-        icon: book
-        icon_pack: fas
-      - name: Coding
-        description: ''
-        percent: 80
-        icon: code
-        icon_pack: fas
-      - name: Blogging
-        description: ''
-        percent: 80
-        icon: pencil
-        icon_pack: fas
+# skills:
+#   - name: Technical
+#     items:
+#       - name: Python
+#         description: ''
+#         percent: 80
+#         icon: python
+#         icon_pack: fab
+#       - name: C/C++
+#         description: ''
+#         percent: 85
+#         icon: c
+#         icon_pack: fab
+#       - name: ROS
+#         description: ''
+#         percent: 80
+#         icon: robot
+#         icon_pack: fas
+#       - name: Matlab/Simulink
+#         description: ''
+#         percent: 80
+#         icon: robot
+#         icon_pack: fas
+#       - name: Git/GitHub
+#         description: ''
+#         percent: 90
+#         icon: github
+#         icon_pack: fab
+#       - name: Onshape
+#         description: ''
+#         percent: 75
+#         icon: robot
+#         icon_pack: fas
+#   - name: Hobbies
+#     color: '#eeac02'
+#     color_border: '#f0bf23'
+#     items:
+#       - name: Reading
+#         description: ''
+#         percent: 80
+#         icon: book
+#         icon_pack: fas
+#       - name: Coding
+#         description: ''
+#         percent: 80
+#         icon: code
+#         icon_pack: fas
+#       - name: Blogging
+#         description: ''
+#         percent: 80
+#         icon: pencil
+#         icon_pack: fas
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -135,5 +135,5 @@ highlight_name: true
 ---
 
 Hello! I'm Shiva Rudra, a recent graduate from BITS Pilani, India. My research experience revolves around Robotics and Control Systems. I will be thrilled to collaborate or contribute to a project in these domains! 
-This is my portfolio website which contains my projects and blogs. You can find my **Resume** in the **[Link](https://drive.google.com/file/d/1c4oq_0obwb4blf0tESq8TKYEiRHNBWjc/view?usp=sharing)**.
+This is my portfolio website which contains my projects and blogs.
 {style="text-align: justify;"}

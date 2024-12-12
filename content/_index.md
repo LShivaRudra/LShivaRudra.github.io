@@ -42,51 +42,52 @@ sections:
       title: Biography
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
-  - block: skills
-    content:
-      title: Skills
-      text: ''
-      # Choose a user to display skills from (a folder name within `content/authors/`)
-      username: admin
-    design:
-      columns: '1'
-  - block: experience
-    content:
-      title: Experience
-      # Date format for experience
-      #   Refer to https://docs.hugoblox.com/customization/#date-format
-      date_format: Jan 2006
-      # Experiences.
-      #   Add/remove as many `experience` items below as you like.
-      #   Required fields are `title`, `company`, and `date_start`.
-      #   Leave `date_end` empty if it's your current employer.
-      #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
-      items:
-        - title: Research Intern
-          company: Robotics Research Center, IIIT Hyderabad
-          company_url: 'https://robotics.iiit.ac.in/'
-          company_logo: rrc_logo
-          location: Hyderabad, India
-          date_start: '2023-06-03'
-          date_end: '2023-12-20'
-          description: |2-
-              Responsibilities include:
+  # - block: skills
+  #   content:
+  #     title: Skills
+  #     text: ''
+  #     # Choose a user to display skills from (a folder name within `content/authors/`)
+  #     username: admin
+  #   design:
+  #     columns: '1'
+  # - block: experience
+  #   content:
+  #     title: Experience
+  #     # Date format for experience
+  #     #   Refer to https://docs.hugoblox.com/customization/#date-format
+  #     date_format: Jan 2006
+  #     # Experiences.
+  #     #   Add/remove as many `experience` items below as you like.
+  #     #   Required fields are `title`, `company`, and `date_start`.
+  #     #   Leave `date_end` empty if it's your current employer.
+  #     #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
+  #     items:
+  #       - title: Research Intern
+  #         company: Robotics Research Center, IIIT Hyderabad
+  #         company_url: 'https://robotics.iiit.ac.in/'
+  #         company_logo: rrc_logo
+  #         location: Hyderabad, India
+  #         date_start: '2023-06-03'
+  #         date_end: '2023-12-20'
+  #         description: |2-
+  #             Responsibilities include:
 
-              * Built a communication module which transmits keyframe messages across different agents which will be used to solve the Multi-SLAM problem. The keyframes and the odometry form the nodes and edges of the posegraph which is optimized whenever there is a loop closure detected. The communication is done via sockets using TCP protocol.
-              * Created a 3D map of the lab using point cloud data from the depth camera and rectified odometry from VINS framework. Utilized Voxfield framework for this purpose. 
-              * Established direct motor control in a drone through the PX4-Autopilot firmware using the uXRCE-DDS middleware and ROS2 framework. This is done both in simulation and in real hardware.
-        - title: Member
-          company: Automation and Robotics Club, BITS Hyderabad
-          company_url: 'https://arcbphc.vercel.app/'
-          company_logo: arc-logo
-          location: Hyderabad, India
-          date_start: '2021-02-01'
-          date_end: ''
-          description: |2-
-            Responsibilities include:
+  #             * Built a communication module which transmits keyframe messages across different agents which will be used to solve the Multi-SLAM problem. The keyframes and the odometry form the nodes and edges of the posegraph which is optimized whenever there is a loop closure detected. The communication is done via sockets using TCP protocol.
+  #             * Created a 3D map of the lab using point cloud data from the depth camera and rectified odometry from VINS framework. Utilized Voxfield framework for this purpose. 
+  #             * Established direct motor control in a drone through the PX4-Autopilot firmware using the uXRCE-DDS middleware and ROS2 framework. This is done both in simulation and in real hardware.
+  #       - title: Member
+  #         company: Automation and Robotics Club, BITS Hyderabad
+  #         company_url: 'https://arcbphc.vercel.app/'
+  #         company_logo: arc-logo
+  #         location: Hyderabad, India
+  #         date_start: '2021-02-01'
+  #         date_end: ''
+  #         description: |2-
 
-              * Led a team of 10-15 members to build an underwater rover. Mainly focused on Powersystems and Electronics aspects of this project which involved component selection, calibration and testing.
-              * Mentored in various workshops which teach foundations of Robotics(microcontrollers, CAD design, etc.) to beginners at our university.
+            # Responsibilities include:
+
+            #   * Led a team of 10-15 members to build an underwater rover. Mainly focused on Powersystems and Electronics aspects of this project which involved component selection, calibration and testing.
+            #   * Mentored in various workshops which teach foundations of Robotics(microcontrollers, CAD design, etc.) to beginners at our university.
     design:
       columns: '2'
   # - block: accomplishments
