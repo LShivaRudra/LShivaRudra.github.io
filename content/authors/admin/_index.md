@@ -40,10 +40,10 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    - course: BEng. majors in Electronics and Instrumentation
+    - course: B.E. in Electronics and Instrumentation
       institution: BITS Pilani
       year: 2024
-    - course: BEng. minors in Robotics and Automation
+    - course: Minor in Robotics and Automation
       institution: BITS Pilani
       year: 2024
 
