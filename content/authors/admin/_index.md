@@ -27,7 +27,7 @@ organizations:
     url: https://www.iiit.ac.in/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include robotics and control systems. Drop me a message if you want to connect!
+bio: My research interests include autonomous systems and perception. Drop me a message if you want to connect!
 
 # Interests to show in About widget
 interests:
