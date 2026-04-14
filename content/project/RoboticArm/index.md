@@ -11,6 +11,7 @@ date: '2022-11-22T00:00:00Z'
 external_link: ''
 
 image:
+  filename: robotic-arm-preview.png
   caption: 
   focal_point: Smart
 

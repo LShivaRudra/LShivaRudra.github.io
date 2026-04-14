@@ -17,35 +17,41 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Robotics Enthusiast
-
-# Organizations/Affiliations to show in About widget
-organizations:
-  - name: BITS Pilani
-    url: https://universe.bits-pilani.ac.in/hyderabad/
-  - name: IIIT Hyderabad
-    url: https://www.iiit.ac.in/
+role: Robotics Researcher
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include autonomous systems and perception. Drop me a message if you want to connect!
 
+# Research experience to show in About widget
+research_experience:
+  - title: Student Researcher
+    organization: Humanoid Robots Lab, University of Bonn, Germany
+    date: December 2025 - Present
+  - title: Research Intern
+    organization: Robotics Research Center, IIIT Hyderabad, India
+    date: June 2023 - December 2023
+
 # Interests to show in About widget
 interests:
-  - Robotics
-  - Autonomous Navigation
-  - Perception
-  - SLAM
-  - Control Systems
+  - Robot Vision & 3D Perception
+  - Physical AI
+  - Autonomous Systems
+
+# Work experience to show in About widget
+work_experience:
+  - title: Robot Navigation Engineer
+    organization: AlphaZ, Los Angeles, California, USA
+    date: May 2024 - September 2025
 
 # Education to show in About widget
 education:
   courses:
+    - course: M.S. in Mobile Robotics
+      institution: University of Bonn, Germany
+      date: October 2025 - September 2027 (Expected)
     - course: B.E. in Electronics and Instrumentation
-      institution: BITS Pilani
-      year: 2024
-    - course: Minor in Robotics and Automation
-      institution: BITS Pilani
-      year: 2024
+      institution: BITS Pilani, Hyderabad, India
+      date: November 2020 - May 2024
 
 # Skills
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -136,5 +142,5 @@ social:
 highlight_name: true
 ---
 
-Hello, I'm Shiva Rudra, a robotics enthusiast with a keen interest in autonomous systems and perception. This page contains few of my projects and articles related to robotics.
+I’m Shiva Rudra, a robotics researcher passionate about robot vision and intelligent systems. My work spans building systems that help robots understand complex environments, make reliable decisions, and operate effectively in the real world across both research and applied settings.
 {style="text-align: justify;"}

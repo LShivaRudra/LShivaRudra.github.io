@@ -11,6 +11,7 @@ date: '2023-05-10T00:00:00Z'
 external_link: ''
 
 image:
+  filename: wheeled-biped-preview.png
   caption: 
   focal_point: Smart
 

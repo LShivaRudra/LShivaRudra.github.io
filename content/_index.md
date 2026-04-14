@@ -200,14 +200,14 @@ sections:
       view: showcase
       # For Showcase view, flip alternate rows?
       flip_alt_rows: false
-  - block: markdown
-    content:
-      title: Gallery
-      subtitle: ''
-      text: |-
-        {{< gallery album="demo" >}}
-    design:
-      columns: '1'
+  # - block: markdown
+  #   content:
+  #     title: Gallery
+  #     subtitle: ''
+  #     text: |-
+  #       {{< gallery album="demo" >}}
+  #   design:
+  #     columns: '1'
   # - block: collection
   #   id: featured
   #   content:
@@ -254,26 +254,26 @@ sections:
       title: Contact
       subtitle:
       text: |-
-        Feel free to reach out to me. I will be thrilled to collaborate or just discuss anything interesting!
+        I'm always excited to connect over robotics, research, and ideas that push intelligent systems forward!
       # Contact (add or remove contact options as necessary)
       email: shivarudralolla@gmail.com
       # phone: 888 888 88 88
       # appointment_url: 'https://calendly.com'
-      address:
-        # street: SBH Colony
-        city: Hyderabad
-        region: Telangana
-        # postcode: '500060'
-        country: India
-        country_code: IN
+      # address:
+      #   street: Friedrich-Hirzebruch-Allee 8
+      #   city: Bonn
+      #   region: North Rhine-Westphalia
+      #   postcode: '53117'
+      #   country: Germany
+      #   country_code: DE
       # directions: Shri Surya Residency, Near Shiva Ganga Theater
       # office_hours:
       #   - 'Monday 10:00 to 13:00'
       #   - 'Wednesday 09:00 to 10:00'
       # Choose a map provider in `params.yaml` to show a map from these coordinates
-      coordinates:
-        latitude: '17.547542964136035'
-        longitude: '78.57248863893717'  
+      # coordinates:
+      #   latitude: ''
+      #   longitude: ''
       contact_links:
         # - icon: twitter
         #   icon_pack: fab
