@@ -45,6 +45,7 @@
       </div>
       {{ end }}
 
+      {{ if $do_link }}<a class="project-read-more" href="{{ $link }}" {{ $target | safeHTMLAttr }}>Explore project <span aria-hidden="true">↗</span></a>{{ end }}
       <div class="btn-links">
         {{ partial "page_links" (dict "page" $item "is_list" 0) }}
       </div>
@@ -59,13 +60,27 @@
         {{ $resource = partial "blox-core/functions/get_featured_image.html" $item }}
       {{ end }}
 
+      {{ $video := "" }}
+      {{ with $item.Params.thumbnail_video }}
+        {{ $video = $item.Resources.GetMatch . }}
+      {{ end }}
+      {{ with $video }}
+        <video controls autoplay muted loop playsinline preload="metadata"
+            aria-label="{{ $item.Title }} — video preview"
+            {{ with $resource }}poster="{{ .RelPermalink }}"{{ end }}
+            style="display: block; width: 540px; max-width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain;">
+          <source src="{{ .RelPermalink }}" type="{{ .MediaType.Type }}">
+          <a href="{{ $link }}">View {{ $item.Title }}</a>
+        </video>
+      {{ else }}
       {{ with $resource }}
         {{ $image := . }}
         {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "resize 540x webp" }}{{ end }}
         {{ if $do_link }}<a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ end }}
           <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
-              alt="{{ $item.Title }}" loading="lazy" style="width: 540px; height: auto; object-fit: cover;">
+              alt="{{ $item.Title }}" loading="lazy" style="width: 540px; max-width: 100%; height: auto; object-fit: cover;">
         {{ if $do_link }}</a>{{ end }}
+      {{ end }}
       {{ end }}
     </div>
   </div>

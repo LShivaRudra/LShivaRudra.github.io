@@ -1,0 +1,15 @@
+<figure class="building-figure">
+  <div class="building-comparison">
+    {{ range $panel := slice (dict "src" (.Get "before") "label" "Colorized input") (dict "src" (.Get "after") "label" "Predicted instances") }}
+      {{ $original := $.Page.Resources.GetMatch $panel.src }}
+      {{ $image := $original.Resize "960x webp" }}
+      <div>
+        <div class="building-panel-label">{{ $panel.label }}</div>
+        <a href="{{ $original.RelPermalink }}" aria-label="Open full-size {{ $panel.label | lower }}">
+          <img src="{{ $image.RelPermalink }}" alt="{{ $panel.label }} — {{ $.Get "caption" }}" width="{{ $image.Width }}" height="{{ $image.Height }}" loading="lazy">
+        </a>
+      </div>
+    {{ end }}
+  </div>
+  <figcaption>{{ .Get "caption" }}</figcaption>
+</figure>

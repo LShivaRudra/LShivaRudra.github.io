@@ -143,4 +143,3 @@ highlight_name: true
 ---
 
 I’m Shiva Rudra, a robotics researcher passionate about robot vision and intelligent systems. My work spans building systems that help robots understand complex environments, make reliable decisions, and operate effectively in the real world across both research and applied settings.
-{style="text-align: justify;"}

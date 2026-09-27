@@ -1,0 +1,14 @@
+{{ $video := .Page.Resources.GetMatch (.Get "src") }}
+{{ $poster := .Page.Resources.GetMatch (.Get "poster") }}
+{{ $autoplay := eq (.Get "autoplay" | default "true") "true" }}
+{{ $width := .Get "width" | default "1280" }}
+{{ $height := .Get "height" | default "720" }}
+<figure class="building-figure building-video">
+  <video controls {{ if $autoplay }}autoplay loop{{ end }} muted playsinline preload="metadata" width="{{ $width }}" height="{{ $height }}"
+      style="aspect-ratio: {{ $width }} / {{ $height }};"
+      {{ with $poster }}poster="{{ .RelPermalink }}"{{ end }} aria-label="{{ .Get "label" | default .Page.Title }}">
+    <source src="{{ $video.RelPermalink }}" type="{{ $video.MediaType.Type }}">
+    <a href="{{ $video.RelPermalink }}">Download the video</a>.
+  </video>
+  <figcaption>{{ .Get "caption" }}</figcaption>
+</figure>

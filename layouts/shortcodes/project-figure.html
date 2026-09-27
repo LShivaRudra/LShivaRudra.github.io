@@ -1,0 +1,8 @@
+{{ $original := .Page.Resources.GetMatch (.Get "src") }}
+{{ $image := $original.Resize "1440x webp" }}
+<figure class="building-figure">
+  <a href="{{ $original.RelPermalink }}" aria-label="Open full-size figure: {{ .Get "alt" }}">
+    <img src="{{ $image.RelPermalink }}" alt="{{ .Get "alt" }}" width="{{ $image.Width }}" height="{{ $image.Height }}" loading="lazy">
+  </a>
+  <figcaption>{{ .Get "caption" }} <a href="{{ $original.RelPermalink }}">View full size</a>.</figcaption>
+</figure>

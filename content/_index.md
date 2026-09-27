@@ -132,37 +132,33 @@ sections:
   #         url: ''
   #   design:
   #     columns: '2'
-  - block: collection
-    id: posts
+  - block: markdown
+    id: publications
     content:
-      title: Recent Posts
-      subtitle: ''
-      text: ''
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 5
-      # Filter on criteria
-      filters:
-        folders:
-          - post
-        author: ""
-        category: ""
-        tag: ""
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ""
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
+      title: Publications
+      subtitle: 'Research papers and workshop contributions.'
+      text: |-
+        <article class="pub-card">
+          <div class="pub-meta">
+            <span class="pub-year">2026</span>
+            <span class="pub-badge">Accepted · Poster</span>
+          </div>
+          <div class="pub-body">
+            <h3 class="pub-title">SG-AMP: <span class="nowrap">Scene-Graph-Guided</span> Active Perception and Semantics-Aware Motion Planning for Pepper Plants</h3>
+            <p class="pub-authors"><span>Rohit Menon,</span> <span><strong>Shiva Rudra Lolla</strong>,</span> <span>Niklas Mueller-Goldingen,</span> <span>Gokul Chenchani,</span> <span>Ribana Roscher,</span> <span>Maren Bennewitz</span></p>
+            <div class="pub-venue">
+              <span class="pub-venue-label"><strong>IROS 2026</strong> · Workshop</span>
+              <p>From Innovation to Adoption: Hardware, AI, Policy, and Funding Challenges in Agricultural Robotics</p>
+            </div>
+          </div>
+        </article>
     design:
-      # Choose a layout view
-      view: compact
-      columns: '2'
+      columns: '1'
   - block: portfolio
     id: projects
     content:
       title: Projects
+      subtitle: 'Ideas brought to life through code, hardware, and experiments.'
       filters:
         folders:
           - project
@@ -176,6 +172,8 @@ sections:
       buttons:
         - name: All
           tag: '*'
+        - name: Motion Planning
+          tag: Motion Planning
         - name: Deep Learning
           tag: Deep Learning
         - name: Control Systems
@@ -200,6 +198,33 @@ sections:
       view: showcase
       # For Showcase view, flip alternate rows?
       flip_alt_rows: false
+  - block: collection
+    id: posts
+    content:
+      title: Blogs
+      subtitle: 'Notes from building, testing, and learning.'
+      text: ''
+      # Choose how many pages you would like to display (0 = all pages)
+      count: 5
+      # Filter on criteria
+      filters:
+        folders:
+          - post
+        author: ""
+        category: ""
+        tag: ""
+        exclude_featured: false
+        exclude_future: false
+        exclude_past: false
+        publication_type: ""
+      # Choose how many pages you would like to offset by
+      offset: 0
+      # Page order: descending (desc) or ascending (asc) date.
+      order: desc
+    design:
+      # Choose a layout view
+      view: compact
+      columns: '2'
   # - block: markdown
   #   content:
   #     title: Gallery
