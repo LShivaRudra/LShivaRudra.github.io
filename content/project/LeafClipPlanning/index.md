@@ -7,6 +7,7 @@ tags:
   - Plant Sensing
 # Portfolio publication date.
 date: '2026-09-27T01:00:00Z'
+draft: true
 external_link: ''
 thumbnail_video: leaf-clip-poses.webm
 image:
