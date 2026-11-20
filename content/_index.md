@@ -4,6 +4,18 @@ title: ''
 date: 2024-05-13
 type: landing
 
+cascade:
+  - _target:
+      kind: page
+      path: /project/**
+    design:
+      css_class: portfolio-article
+  - _target:
+      kind: page
+      path: /post/**
+    design:
+      css_class: portfolio-article
+
 sections:
   - block: hero
     demo: true # Only display this section in the Hugo Blox Builder demo site
