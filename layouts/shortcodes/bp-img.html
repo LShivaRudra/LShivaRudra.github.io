@@ -1,0 +1,7 @@
+{{- /* Responsive WebP image from the page bundle. Usage: {{< bp-img src="a.jpg" alt="..." w="900" >}} */ -}}
+{{- $r := .Page.Resources.GetMatch (.Get "src") -}}
+{{- if not $r }}{{ errorf "bp-img: %q not found in %s" (.Get "src") .Page.File.Path }}{{ end -}}
+{{- $w := int (.Get "w" | default "1200") -}}
+{{- if lt $r.Width $w }}{{ $w = $r.Width }}{{ end -}}
+{{- $img := $r.Resize (printf "%dx webp q82" $w) -}}
+<img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ .Get "alt" }}" loading="{{ .Get "loading" | default "lazy" }}" decoding="async"{{ with .Get "class" }} class="{{ . }}"{{ end }}>

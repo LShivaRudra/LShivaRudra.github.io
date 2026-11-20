@@ -1,0 +1,63 @@
+{{- /*
+  "Follow one frame": a CSS-only stepper (radio inputs; arrow keys work natively).
+  Images step1.jpg … step5.jpg live in the page bundle.
+*/ -}}
+{{- $steps := slice
+  (dict "img" "step1.jpg" "kicker" "Observe" "title" "Fit the table, then read the scene"
+        "count" "1 RGB-D frame"
+        "text" "The wrist-mounted D435 captures an aligned colour + depth frame. RANSAC fits the dominant plane (green tint) — that is the table. Those same table pixels later serve as the white reference for colour.")
+  (dict "img" "step2.jpg" "kicker" "Measure" "title" "Turn depth into height"
+        "count" "height map"
+        "text" "Every depth pixel is back-projected and measured against the table plane. Warmer = higher, so the top layer of the stack stands out before any learning is involved.")
+  (dict "img" "step3.jpg" "kicker" "Segment" "title" "Ask SAM 3 for “lego brick”"
+        "count" "61 masks"
+        "text" "A single text prompt returns instance masks for every visible brick — top layer, lower layers and loose ones alike. Colours here are just instance IDs.")
+  (dict "img" "step4.jpg" "kicker" "Filter" "title" "Keep only what the gripper can reach"
+        "count" "23 masks"
+        "text" "A height histogram finds the highest substantial surface; only masks within one brick height (≈ 9.6 mm) of it survive. Lower layers and loose table bricks drop out.")
+  (dict "img" "step5.jpg" "kicker" "Decide" "title" "Classify colour, fit a 3D pick target"
+        "count" "22 targets · 18 ✓ · 4 ✗"
+        "text" "A brick-size prior splits merged masks and rejects partial ones. Each brick is colour-classified in CIELAB and gets a fitted centre and yaw: green = accept, red = scrap, yellow dot = grasp centre.")
+-}}
+<div class="bp-stepper" role="group" aria-label="Perception pipeline, one frame at a time">
+  {{- range $i, $s := $steps }}
+  <input type="radio" name="bp-step" id="bp-step-{{ add $i 1 }}" class="bp-step-input"{{ if eq $i 0 }} checked{{ end }} aria-label="Step {{ add $i 1 }}: {{ $s.kicker }}">
+  {{- end }}
+  <div class="bp-stage">
+    {{- range $i, $s := $steps }}
+    {{- $r := $.Page.Resources.GetMatch $s.img }}
+    {{- $img := $r.Resize (printf "%dx webp q85" (cond (gt $r.Width 760) 760 $r.Width)) }}
+    <figure class="bp-frame bp-frame-{{ add $i 1 }}">
+      <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="Step {{ add $i 1 }} — {{ $s.title }}" loading="lazy" decoding="async">
+      <span class="bp-frame-count">{{ $s.count }}</span>
+      {{- if eq $i 4 }}
+      <ul class="bp-callouts" aria-hidden="true">
+        <li style="top:6.5%" class="is-muted">loose · ignored</li>
+        <li style="top:28.2%" class="is-bad">scrap</li>
+        <li style="top:47.6%" class="is-bad">scrap</li>
+        <li style="top:63.3%" class="is-good">accept</li>
+        <li style="top:87.3%" class="is-target">grasp</li>
+      </ul>
+      {{- end }}
+    </figure>
+    {{- end }}
+  </div>
+  <ol class="bp-step-list">
+    {{- range $i, $s := $steps }}
+    <li class="bp-step bp-step-{{ add $i 1 }}">
+      <label for="bp-step-{{ add $i 1 }}">
+        <span class="bp-step-num">{{ add $i 1 }}</span>
+        <span class="bp-step-head"><small>{{ $s.kicker }}</small>{{ $s.title }}</span>
+      </label>
+      <p>{{ $s.text }}</p>
+    </li>
+    {{- end }}
+  </ol>
+  <div class="bp-funnel" aria-label="Detections remaining after each stage">
+    <span style="--n:61"><b>61</b> SAM 3 masks</span>
+    <span style="--n:23"><b>23</b> top layer</span>
+    <span style="--n:22"><b>22</b> pick targets</span>
+    <span style="--n:18" class="is-good"><b>18</b> accept</span>
+    <span style="--n:4" class="is-bad"><b>4</b> scrap</span>
+  </div>
+</div>

@@ -1,0 +1,4 @@
+{{- /* Privacy-friendly YouTube embed. Usage: {{< bp-youtube id="..." title="..." >}} */ -}}
+<div class="bp-embed">
+  <iframe src="https://www.youtube-nocookie.com/embed/{{ .Get "id" }}?rel=0" title="{{ .Get "title" }}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>

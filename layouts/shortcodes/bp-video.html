@@ -1,0 +1,8 @@
+{{- /* Bare video from the page bundle. Usage: {{< bp-video src="a.mp4" poster="a.jpg" label="..." autoplay="true" >}} */ -}}
+{{- $video := .Page.Resources.GetMatch (.Get "src") -}}
+{{- $poster := .Page.Resources.GetMatch (.Get "poster") -}}
+{{- $autoplay := eq (.Get "autoplay" | default "false") "true" -}}
+<video controls {{ if $autoplay }}autoplay loop{{ end }} muted playsinline preload="metadata"{{ with $poster }} poster="{{ (.Resize "960x webp q80").RelPermalink }}"{{ end }} aria-label="{{ .Get "label" }}"{{ with .Get "class" }} class="{{ . }}"{{ end }}>
+  <source src="{{ $video.RelPermalink }}" type="{{ $video.MediaType.Type }}">
+  <a href="{{ $video.RelPermalink }}">Download the video</a>
+</video>
