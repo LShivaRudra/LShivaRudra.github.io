@@ -144,11 +144,14 @@ sections:
             <span class="pub-badge">Accepted · Poster</span>
           </div>
           <div class="pub-body">
-            <h3 class="pub-title">SG-AMP: <span class="nowrap">Scene-Graph-Guided</span> Active Perception and Semantics-Aware Motion Planning for Pepper Plants</h3>
+            <h3 class="pub-title"><a href="https://arxiv.org/pdf/2609.01579" target="_blank" rel="noopener">SG-AMP: <span class="nowrap">Scene-Graph-Guided</span> Active Perception and Semantics-Aware Motion Planning for Pepper Plants</a></h3>
             <p class="pub-authors"><span>Rohit Menon,</span> <span><strong>Shiva Rudra Lolla</strong>,</span> <span>Niklas Mueller-Goldingen,</span> <span>Gokul Chenchani,</span> <span>Ribana Roscher,</span> <span>Maren Bennewitz</span></p>
             <div class="pub-venue">
               <span class="pub-venue-label"><strong>IROS 2026</strong> · Workshop</span>
               <p>From Innovation to Adoption: Hardware, AI, Policy, and Funding Challenges in Agricultural Robotics</p>
+            </div>
+            <div class="pub-links">
+              <a href="https://arxiv.org/pdf/2609.01579" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper (PDF)</a>
             </div>
           </div>
         </article>
